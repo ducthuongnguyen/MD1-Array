@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--Bài 3- Viết chương trình khởi tạo mảng số nguyên. Hiển hiện giá trị lớn nhất trong mảng đó.
+ In ra giá trị trung bình của các phần tử trong mảng.-->
+<body>
+<script>
+    let arr = [7, 5, -7, 99, 44, 2, 10];
+    let max = arr[0];
+    let sum = 0;
+    let average;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+        sum += arr[i];
+        average = (sum / arr.length).toFixed(2);
+    }
+    alert('Max la ' + max + '. Trung binh la: ' + average);
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Eng = ['file', 'folder', 'run', 'dictionary', 'tool', 'array'];
+    let Viet = ['tập tin', 'thư mục', 'chạy', 'từ điển', 'công cụ', 'mảng'];
+    let word = prompt('Bạn muốn tìm nghĩa từ nào? ' + Eng.join(' - '));
+    let result = 'Không có trong từ điển';
+    for (let i = 0; i < Eng.length; i++) {
+        if (word == Eng[i]) {
+            result = 'Từ ' + word + ' có nghĩa là ' + Viet[i];
+            console.log(Viet[i])
+        }
+    }
+    alert(result)
+</script>
+</body>
+</html>

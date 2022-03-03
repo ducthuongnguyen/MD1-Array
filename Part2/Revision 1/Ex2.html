@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--Bài 2- Viết chương trình khởi tạo mảng số nguyên gồm 10 phần tử khác nhau.
+ Chương trình hiển thị ra được phần tử có giá trị lớn nhất trong mảng và vị trí của phần tử đó.-->
+<body>
+<script>
+    let numbers = prompt('Nhập 10 số nguyên, cách nhau bởi dấu chấm');
+    let convert = numbers.split('.');
+    let max = convert[0];
+    let max_index = 0;
+    console.log(max)
+    console.log(convert)
+    for (let i = 0; i < convert.length; i++) {
+        if (convert[i] > max) {
+            max = convert[i];
+           max_index=i
+        }
+    }
+    alert('Phần tử lớn nhất trong dãy là ' + max + ' nằm ở vị trí ' + max_index);
+
+</script>
+</body>
+</html>

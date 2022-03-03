@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--Bài 6- Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử, nhập/tạo phần tử số nguyên V.
+ Chương trình tìm xem V có nằm trong mảng số nguyên không?
+  Nếu V thuộc mảng số nguyên thì in ra "V is in the array" còn lại in ra "V is not in the array".-->
+<body>
+<script>
+    let arr = [];
+    let check = 'v không nằm trong mảng.';
+    for (let i = 0; i < 10; i++) {
+        let x = Math.floor(Math.random() * 100);
+        arr.push(x);
+    }
+    console.log(arr);
+    let v = +prompt('Chương trình đã tự động khởi tạo 1 mảng gồm 10 số nguyên dương từ 1 ->100. ' +
+        'Nhập 1 số bất kỳ để kiểm tra số đó ố nằm trong mảng không?');
+    for (let i = 0; i < 10; i++) {
+
+        if (arr[i] == v) {
+            check = 'v nằm trong mảng'
+        }
+    }
+    alert(check);
+</script>
+</body>
+</html>

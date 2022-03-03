@@ -8,6 +8,24 @@
  Chương trình kiểm tra xem V có thuộc mảng đã cho không, nếu V thuộc mảng đã cho xoá V khỏi mảng
   (Bản chất việc xoá ở đây tức là dịch phần tử ở bên phải V sang vị trí của V, và gán 0 cho phần tử cuối cùng của mảng)-->
 <body>
+<script>
+    let arr = [];
+    let length = 10;
 
+    for (let i = 0; i < length; i++) {
+        let x = prompt('Nhập số nguyên thứ ' + (i + 1));
+        arr.push(x)
+    }
+    let v = prompt('Nhập v');
+    for (let i = 0; i < arr.length; i++) {
+        if (v === arr[i]) {
+            arr.splice(i, 1);
+            arr.push(0);
+        }
+    }
+    document.write(arr.join(' '))
+    console.log(arr)
+
+</script>
 </body>
 </html>

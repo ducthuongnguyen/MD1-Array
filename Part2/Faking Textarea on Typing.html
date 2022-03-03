@@ -33,13 +33,14 @@
     arr[16] = 'Ệ';
     arr[17] = 'N';
     arr[18] = ':))';
-
+    console.log(arr[0])
     function type() {
         let text = document.getElementById('txt').value;
         let length = text.length;
         if (length > 0) {
             for (let i = 1; i <= length; i++) {
                 str += arr[i];
+                console.log(arr[0])
                 if (i === 18) {
                     str = '';
                     document.getElementById('txt').value = '';

@@ -7,14 +7,15 @@
 <!--Bài 5- Viết chương trình đếm số nguyên âm trong một chuỗi-->
 <body>
 <script>
-    let arr = [7, 5, -7, -99, 44, 2, 10];
+    let a = prompt('Nhập chuỗi: ');
+    console.log(a)
     let count = 0;
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] < 0) {
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] === 'u' || a[i] == 'e' || a[i] == 'o' || a[i] == 'a' || a[i] == 'i') {
             count++;
         }
     }
-    document.write('Có ' + count + ' số nguyên âm')
+    alert('Có ' + count + ' chữ cái nguyên âm trong chuỗi.')
 </script>
 </body>
 </html>
